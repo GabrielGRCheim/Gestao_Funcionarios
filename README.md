@@ -1,34 +1,28 @@
 # Gestao_Funcionarios
 
-🖥️ Gestão de Funcionários - Frontend Angular
-🚀 Executando a aplicação
+## 🖥️ Gestão de Funcionários - Frontend Angular
+## 🚀 Executando a aplicação
 
-Clonar o repositório:
+1. Clonar o repositório:
 
 git clone <URL_DO_REPOSITORIO>
 cd funcionario-web
 
-
-Instalar dependências:
-
+2. Instalar dependências:
+   
 npm install
 
-
-⚠️ Se houver conflito de dependências:
-
-npm install --legacy-peer-deps
-
-
-Rodar a aplicação:
+3. Rodar a aplicação:
 
 ng serve
 
-
-Acessar no navegador:
+4. Acessar no navegador:
 
 http://localhost:4200
 
-🔐 Fluxo de autenticação
+---
+
+##  🔐 Fluxo de autenticação
 
 Tela de login com campo de e-mail.
 
@@ -48,7 +42,9 @@ Exibe o e-mail do usuário logado.
 
 Botão Sair limpa o token e redireciona para /login.
 
-🛡️ Guards utilizados
+---
+
+## 🛡️ Guards utilizados
 1. AuthGuard (CanActivate)
 
 Protege rotas privadas, bloqueando acesso de usuários não autenticados.
@@ -81,7 +77,7 @@ canDeactivate(component: UnsavedChanges): boolean {
   return true;
 }
 
-📂 Estrutura das telas privadas
+## 📂 Estrutura das telas privadas
 Componente	Descrição
 FuncionarioListComponent	Lista de funcionários
 FuncionarioFormComponent	Formulário de novo/edição de funcionário
@@ -89,7 +85,7 @@ HeaderComponent	Exibe e-mail logado e botão Sair
 
 Todas as telas privadas incluem <app-header> para consistência do layout e logout.
 
-⚠️ Observações
+## ⚠️ Observações
 
 O fluxo de login é simulado (token mock). Em produção, deve ser integrado a um backend seguro.
 
