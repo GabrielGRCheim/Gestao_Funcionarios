@@ -3,7 +3,10 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { FuncionarioService } from '../../services/funcionario.service';
 import { MessageService } from 'primeng/api';
 import { FormsModule } from '@angular/forms';
+<<<<<<< HEAD
 import { HeaderComponent } from '../../shared/header/header.component';
+=======
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
 
 // Componentes PrimeNG
 import { ToastModule } from 'primeng/toast';
@@ -22,7 +25,10 @@ import { TagModule } from 'primeng/tag';
     FormsModule,
     RouterLink,
     ToastModule,
+<<<<<<< HEAD
     HeaderComponent,
+=======
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
     ButtonModule,
     InputTextModule,
     SelectButtonModule,
@@ -37,7 +43,10 @@ export class FuncionarioFormComponent implements OnInit {
   id: number | null = null;
   isEdicao = false;
   carregando = this.service.loading;
+<<<<<<< HEAD
   salvo = false;
+=======
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
 
   funcionario: FuncionarioRequest = {
     nome: '',
@@ -99,8 +108,12 @@ export class FuncionarioFormComponent implements OnInit {
       const day = String(date.getDate()).padStart(2, '0');
       this.funcionario.dataAdmissao = `${year}-${month}-${day}`;
     }
+<<<<<<< HEAD
   }
   
+=======
+}
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
 
   salvar() {
     this.prepararParaSalvar();
@@ -126,8 +139,11 @@ export class FuncionarioFormComponent implements OnInit {
         error: (err) => this.tratarErroHttp(err)
       });
     }
+<<<<<<< HEAD
         this.salvo = true;
     alert('Funcionário salvo com sucesso!');
+=======
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
   }
 
   limpar() {
@@ -142,12 +158,15 @@ export class FuncionarioFormComponent implements OnInit {
     this.msg.add({ severity: 'info', summary: 'Info', detail: 'Campos limpos' });
   }
 
+<<<<<<< HEAD
   hasUnsavedChanges(): boolean {
     return !this.salvo && (!!this.funcionario.nome || !!this.funcionario.cargo || !!this.funcionario.salario);
   }
 
 
 
+=======
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
   private validarCampos(): boolean {
     const f = this.funcionario;
 
@@ -179,8 +198,11 @@ export class FuncionarioFormComponent implements OnInit {
     return true;
   }
 
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
   private tratarErroHttp(err: any) {
     this.service.loading.set(false);
     const status = err?.status;

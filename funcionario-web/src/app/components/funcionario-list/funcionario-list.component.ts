@@ -3,7 +3,10 @@ import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { FuncionarioService } from '../../services/funcionario.service';
+<<<<<<< HEAD
 import { HeaderComponent } from '../../shared/header/header.component';
+=======
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
 
 // PrimeNG
 import { TableModule } from 'primeng/table';
@@ -24,7 +27,10 @@ import {FuncionarioResponse} from "../../models/funcionarioResponse";
     FormsModule,
     RouterModule,
     TableModule,
+<<<<<<< HEAD
     HeaderComponent,
+=======
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
     ButtonModule,
     InputTextModule,
     SelectButtonModule,

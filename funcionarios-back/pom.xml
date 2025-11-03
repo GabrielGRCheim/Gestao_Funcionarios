@@ -30,12 +30,15 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
+<<<<<<< HEAD
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+=======
+>>>>>>> a2cfdc2d73ac0b80bab9da3a48a8ee3562cf87df
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
